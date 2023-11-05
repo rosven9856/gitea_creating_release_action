@@ -1,0 +1,57 @@
+name: "gitea release create"
+description: "creating a new release through the API in the system gitea"
+inputs:
+  gitea_schema:
+    description: "gitea schema"
+    default: "https"
+  gitea_host:
+    description: "gitea host"
+    required: true
+  gitea_organization:
+    description: "gitea organization or user"
+    required: true
+  gitea_repo:
+    description: "gitea repository"
+    required: true
+  access_token:
+    description: "access token"
+    required: true
+  release_body:
+    description: "option {body} in request to api"
+    required: true
+    default: ""
+  release_draft:
+    description: "option {draft} in request to api"
+    required: true
+    default: "true"
+  release_name:
+    description: "option {name} in request to api"
+    required: true
+    default: ""
+  release_prerelease:
+    description: "option {prerelease} in request to api"
+    required: true
+    default: "false"
+  release_tag_name:
+    description: "option {tag_name} in request to api"
+    required: true
+    default: ""
+  release_target_commitish:
+    description: "option {target_commitish} in request to api"
+    required: true
+    default: ""
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.gitea_schema }}
+    - ${{ inputs.gitea_host }}
+    - ${{ inputs.gitea_organization }}
+    - ${{ inputs.gitea_repo }}
+    - ${{ inputs.access_token }}
+    - ${{ inputs.release_body }}
+    - ${{ inputs.release_draft }}
+    - ${{ inputs.release_name }}
+    - ${{ inputs.release_prerelease }}
+    - ${{ inputs.release_tag_name }}
+    - ${{ inputs.release_target_commitish }}
