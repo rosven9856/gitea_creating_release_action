@@ -41,7 +41,7 @@ Gitea schema.
 ## Example usage
 
 ```yml
-uses: actions/gitea_create_release_action@master
+uses: actions/gitea_creating_release_action@master
 with:
   gitea_schema: "https"
   gitea_host: "gitea.example.org"
