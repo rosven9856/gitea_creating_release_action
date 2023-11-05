@@ -18,7 +18,7 @@ jobs:
           message: |
             Author: ${{ github.actor }}
             Repository: ${{ github.repository }}
-            Event: ${{github.event.name}}
+            Event: ${{ github.event.name }}
             Issue: ${{ github.event.issue.number }}
 
             See changes: https://github.com/${{ github.repository }}/issues/${{ github.event.issue.number }}
