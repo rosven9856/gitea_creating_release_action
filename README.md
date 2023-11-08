@@ -42,8 +42,26 @@ Gitea schema.
 
 ## Example usage
 
+### GitHub
 ```yml
-uses: actions/gitea_creating_release_action@master
+uses: rosven9856/gitea_creating_release_action@master
+with:
+  gitea_schema: "https"
+  gitea_host: "gitea.example.org"
+  gitea_organization: "organization"
+  gitea_repo: "repository"
+  access_token: "${{ secrets.GITEA_ACCESS_TOKEN }}"
+  release_body: ""
+  release_draft: "true"
+  release_name: "release_name"
+  release_prerelease: "false"
+  release_tag_name: "1.0.0"
+  release_target_commitish: ""
+```
+
+### Gitea
+```yml
+uses: https://gitea.com/rosven9856/gitea_creating_release_action.git@master
 with:
   gitea_schema: "https"
   gitea_host: "gitea.example.org"
@@ -63,3 +81,4 @@ with:
 ### You found a bug or want to propose a feature?
 
 * File an issue here on GitHub: [![Issue](https://img.shields.io/badge/-Create%20Issue-6cc644.svg?logo=github&maxAge=31557600)](https://github.com/rosven9856/gitea_creating_release_action/issues/new).
+* File an issue here on Gitea: [![Issue](https://img.shields.io/badge/-Create%20Issue-6cc644.svg?logo=gitea&maxAge=31557600)](https://gitea.com/rosven9856/gitea_creating_release_action/issues/new).
