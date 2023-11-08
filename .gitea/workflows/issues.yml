@@ -16,9 +16,9 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-            Github. Creating new issue
+            Gitea. Creating new issue
             
-            Author: ${{ github.actor }}
-            Repository: ${{ github.repository }}
+            Author: ${{ gitea.actor }}
+            Repository: ${{ gitea.repository }}
 
-            See changes: https://github.com/${{ github.repository }}/issues/${{ github.event.issue.number }}
+            See changes: https://gitea.com/${{ gitea.repository }}/issues/${{ gitea.event.issue.number }}
