@@ -1,3 +1,7 @@
+<p align="center">
+    <img width="560" height="260" src="docs/image/github_gitea_actions.jpg" alt="github gitea actions">
+</p>
+
 # Creating a release in Gitea
 
 [![License](https://img.shields.io/github/license/rosven9856/gitea_creating_release_action)](https://github.com/rosven9856/gitea_creating_release_action/blob/master/LICENSE)
@@ -52,11 +56,11 @@ with:
   gitea_repo: "repository"
   access_token: "${{ secrets.GITEA_ACCESS_TOKEN }}"
   release_body: ""
-  release_draft: "true"
+  release_draft: "false"
   release_name: "release_name"
   release_prerelease: "false"
   release_tag_name: "1.0.0"
-  release_target_commitish: ""
+  release_target_commitish: "master"
 ```
 
 ### Gitea
@@ -69,11 +73,11 @@ with:
   gitea_repo: "repository"
   access_token: "${{ secrets.GITEA_ACCESS_TOKEN }}"
   release_body: ""
-  release_draft: "true"
+  release_draft: "false"
   release_name: "release_name"
   release_prerelease: "false"
   release_tag_name: "1.0.0"
-  release_target_commitish: ""
+  release_target_commitish: "master"
 ```
 
 ## Reach out to us
