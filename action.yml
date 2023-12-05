@@ -55,3 +55,6 @@ runs:
     - ${{ inputs.release_prerelease }}
     - ${{ inputs.release_tag_name }}
     - ${{ inputs.release_target_commitish }}
+branding:
+  icon: 'box'
+  color: 'green'
