@@ -7,7 +7,7 @@
 [![License](https://img.shields.io/github/license/rosven9856/gitea_creating_release_action)](https://github.com/rosven9856/gitea_creating_release_action/blob/master/LICENSE)
 
 This action will create a new release in the Gitea system using the API and output all debugging information to the log.
-See from detail https://docs.gitea.com/api/1.20/#tag/repository/operation/repoCreateRelease
+See from detail https://docs.gitea.com/api/1.21/#tag/repository/operation/repoCreateRelease
 
 ## Inputs
 
